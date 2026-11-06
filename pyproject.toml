@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tinysite"
+version = "0.1.0"
+description = "A very small static site generator: Markdown in, HTML out"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Kevin Liu"}]
+
+[project.scripts]
+tinysite = "tinysite.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["tinysite*"]
